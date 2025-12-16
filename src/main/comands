@@ -1,0 +1,11 @@
+SELECT * FROM PRODUCT;
+
+INSERT INTO product (id, quantity)
+VALUES (1, 1);
+
+
+curl -X POST http://localhost:8082/inventory/reserve/1 &
+curl -X POST http://localhost:8082/inventory/reserve/1 &
+
+INSERT INTO product (id, quantity, version)
+VALUES (1, 1, 0);
